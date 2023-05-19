@@ -1,10 +1,19 @@
-const newMessage = 'Message'
+import PropTypes from 'prop-types'
 
-export const FirstApp = () => {
+export const FirstApp = ({title, subtitle}) => {
   return (
     <>
-        <h1>{newMessage}</h1>
-        <h2>First app</h2>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
     </>
   )
+}
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.number
+}
+
+FirstApp.defaultProps = {
+  title:"There's no title",
 }

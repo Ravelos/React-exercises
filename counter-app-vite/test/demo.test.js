@@ -1,7 +1,12 @@
-test('This test must not fail',() => {
+describe("Test in demo component", () => {
+ 
+    test("This test must not fail", () => {
+    const message1 = "Hello test";
 
-    if( 1 === 0 ){
-        throw new Error("You cannot divide by zero");
-    }
+    const message2 = message1.trim();
 
-})
+    expect(message1).toBe(message2);
+    
+    });
+    
+});

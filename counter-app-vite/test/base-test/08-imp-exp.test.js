@@ -16,7 +16,6 @@ describe("Testing 08-imp-exp", () => {
   it("should return undefined if the id does not exist", () => {
     const id = 3000;
     const heroe = getHeroesById(id);
-    console.log(heroe);
     expect(heroe).toBeFalsy();
   });
 });
